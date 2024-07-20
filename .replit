@@ -1,0 +1,7 @@
+run = "git add . git commit -m \"Initial commit\" git push origin main"
+modules = ["python-3.9"]
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "git add . git commit -m \"Initial commit\" git push origin main"]
